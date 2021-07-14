@@ -1,7 +1,7 @@
 // Carte des Aventures Labs du Québec
-var dateMAJ = "11 juillet 2021"; // modif skincell
-var nbTotalAventuresLabs = 299; // modif skincell
-var nbAventuresLabsActives = 299; // modif skincell
+var dateMAJ = "11 juillet 2021"; // modif skincell A
+var nbTotalAventuresLabs = 299; // modif skincell A 
+var nbAventuresLabsActives = 299; // modif skincell A
 // Début du chargement de la table des Aventures Labs du Québec
 // [0]  = Date de publication (AAAA-MM-JJ)
 // [1]  = Titre de l'Aventure Lab

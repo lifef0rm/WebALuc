@@ -1,0 +1,20 @@
+Bonjour Luc,
+
+C'est dommage que Geocaching HQ a pris la décision de désactiver l'API pour les adventures labs, ce qui rend presque impossible la mise à jour du très joli site que tu as fais.
+
+Etant moi-même programmeur, j'ai pris la liberté de décortiquer ton site pour y ajouter ma 3e lab cache que j'ai publié il y a 2 jours.
+
+J'ai modifié ton fichier aventures-labs-du-quebec.js pour l'inclure dans ta liste.
+
+La seule chose que je peux pas faire c'est la capture pour la carte affichant les 5 points oranges de la lab cache.
+
+["2021-07-09","Sentier de la Rivière-de-la-Tortue","sentier-de-la-riviere-de-la-tortue","00ebf0a4-c662-4e76-889a-1889622a2b47","skincell","8b164301-381c-4c11-959c-d1fa57b28942","45.390900","-73.536350","N45 23.454 W073 32.181","5","Non linéaire","https://labs.geocaching.com/goto/0f250feb-d135-4c3d-af38-c3a2a52b2ba1","Le trajet suit la Rivière-de-la-Tortue sur environ deux kilomètres dans la ville de Candiac, en partant du parc Saint-François-Xavier.<br /><br />Le site est ouvert à l&#39;année pour tou.tes les visiteur.ses, et ce, du lever au coucher du soleil afin de contempler la faune ainsi que la flore qui habitent ce petit environnement. <br /><br />Vous marcherez autant sur le bord de l&#39;eau qu&#39;entre les arbres et les étendues vertes, en passant par des aires de détente, des points d&#39;observation ainsi que des emplacements où descendre une embarcation comme un paddleboard ou un kayak sur l&#39;eau.<br /><br />Les citoyens sont invités à emprunter uniquement les sentiers désignés afin de protéger la faune et la flore. <br /><br />Début du sentier : 50, ch. Saint-François-Xavier, Candiac, QC. Stationnement disponible.<br /><br />Prévoir au total 90 minutes aller-retour. Vélo interdit.<br /><br />Aucune cache bonus n&#39;est reliée à cette lab cache. Seulement de la pure détente.<br />","https://gsmediadata.blob.core.windows.net/mediacontainer/3e2c5e86-ea46-4645-b5b8-db68ea63c83f","","",""],
+
+Bien que je sais que tu ne mettras probablement plus le site à jour, libre à toi de l'ajouter ou non.
+
+Au plaisir de discuter avec toi en ligne, ou à un Event un de ces jours.
+
+Michel
+
+
+

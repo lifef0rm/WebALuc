@@ -1,0 +1,200 @@
+#dateMAJ {
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+.w3-check,
+.w3-radio {
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  margin-right: 4px;
+}
+
+@media (min-width: 600px) {
+  .divRayonLL {
+    float: left;
+    width: 70%;
+    margin-right: 16px;
+  }
+  .divRayonKm {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 599px) {
+  .divRayonLL {
+    width: 100%;
+  }
+  .divRayonKm {
+    width: 100%;
+  }
+}
+
+.colonneVignette {
+  width: 210px;
+}
+
+.cadreVignette {
+  background-position: center;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  cursor:        zoom-in;
+  margin-top:    4px;
+  margin-bottom: 4px;
+  width:  180px;
+  height: 120px;
+}
+
+.cadreVignette:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .colonneVignette {
+    width: 150px;
+  }
+  .cadreVignette {
+    width: 120px;
+    height: 80px;
+  }
+}
+
+.colonneAction > a:link {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+.boutonAction {
+  font-size: 95%;
+}
+
+.boutonAction > img {
+  width: 18px;
+  height: 18px;
+  margin-top: -2px;
+}
+
+.iconeGeolocalisation {
+  vertical-align: text-top;
+  margin-left: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+div#cRetour {
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 1px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  right: 20px;
+  opacity: 1;
+  z-index: 2;
+  transition: all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+div#cRetour > img {
+  height: 32px;
+  width: 32px;
+  filter: invert(1);
+}
+
+div#cRetour:hover {
+  background: rgba(2, 135, 77, 1);
+  transition: all ease-in 0.2s;
+}
+
+div#cRetour.cInvisible {
+  bottom: -35px;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+
+div#cRetour.cVisible {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.visites {
+  display: none;
+  margin-top: 1.5em;
+  text-align:center
+}
+
+/* La fenêtre modale permettant d'afficher l'image de l'Aventure Lab */
+#fenetreModale {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 8vh;
+  left: 0;
+  top: 0;
+  width:  100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Image de l'Aventure Lab au sein de la fenêtre modale */
+#imageAAfficher  {
+  border: 4px solid white;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+  max-width:  82vw;
+  max-height: 82vh;
+}
+
+/* Texte sous l'image de l'Aventure Lab au sein de la fenêtre modale */
+#texteAAfficher {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding-top: 8px;
+}
+
+/* Un peu d'animation lors de l'affichage de la fenêtre modale */
+#imageAAfficher , #texteAAfficher {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: zoom;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* Bouton de fermeture de la fenêtre modale */
+.boutonX {
+  position: fixed;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.boutonX:hover,
+.boutonX:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

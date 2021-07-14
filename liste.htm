@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="noindex, nofollow" name="robots">
+  <title>Liste des Aventures Labs du Québec</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/icone-lab-cache.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet" href="css/w3.css" type="text/css">
+  <link rel="stylesheet" href="css/alq.css" type="text/css">
+  <link rel="stylesheet" href="css/liste.css" type="text/css">
+  <script src="aventures-labs-du-quebec.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+<div class="w3-container w3-green">
+  <center>
+  <div class="w3-container largeurMaximaleContenu">
+    <h4 class="w3-left">
+      Liste des Aventures Labs du Québec
+      <span id="dateMAJ" class="insecable"></span>
+    </h4>
+    <div id="barreMenu" class="w3-right">
+    </div>
+  </div>
+  </center>
+</div>
+
+<br>
+
+<div class="w3-container largeurMaximaleContenu divCentree">
+  <div class="w3-white w3-card-4">
+    <span class="w3-button w3-large w3-ripple" onclick="afficherOuMasquerOptionsListe('divOptionsListe')">Options <span style="font-size:smaller;">&#9660;</span></span>
+    <div class="w3-container w3-hide" id="divOptionsListe">
+      <div class="w3-container w3-border">
+        <div class="w3-large oc-mt6">
+          Inclure&nbsp;:
+        </div>
+        <div class="oc-mt4">
+          <input id="toutQc"  class="w3-radio" name="optionRecherche" type="radio" value="toutQc" checked onclick="deactiverOptionsRayon()"> 
+          <label>Toutes les Aventures Labs du Québec</label>
+        </div>
+        <div class="oc-mt4">
+          <input id="rayonPz" class="w3-radio" name="optionRecherche" type="radio" value="rayonPz" onclick="activerOptionsRayon()"> 
+          <label>Seulement les Aventures Labs situées dans un rayon d'un point central</label>
+        </div>
+        <div id="optionsRayon" class="w3-row w3-margin-bottom inactif" style="margin-top: 2px; margin-left: 25px;">
+          <div class="divRayonLL">
+            <label>Latitude et longitude du point central 
+            <a href="javascript:void(0)" onclick="geolocaliserLatLon();" title="Géolocalisation"><img src="images/location.svg" class="iconeGeolocalisation"></a>
+            </label>
+            <input class="w3-input w3-border oc-mt2" id="idLL" placeholder="Format Minutes.Décimales..." type="text">
+          </div>
+          <div class="divRayonKm">
+            <label>Rayon en km</label>
+            <input class="w3-input w3-border oc-mt2" id="idRayon" type="text" value="15">
+          </div>
+        </div>
+      </div>
+      <div class="w3-margin-top  w3-hide-small">
+        <input class="w3-check" id="idCheckImageAL" type="checkbox"> 
+        <label>Inclure la vignette des Aventures Labs (augmente votre consommation de données Internet)<label>
+      </div>
+      <p><button class="w3-btn w3-green w3-round oc-ripple" onclick="genererListeAL()">Générer</button></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div id="cadreListeAL" class="w3-container largeurMaximaleContenu divCentree">
+  <div class="w3-container w3-white w3-card-4">
+    <div id="listeAL"></div>
+    <br>
+  </div>
+</div>
+
+<div class="visites" style="margin-top: 1.5em; text-align:center">
+  <a href="https://info.flagcounter.com/gjC5" target="_blank"><img class="w3-card-4" src="https://s01.flagcounter.com/count2/gjC5/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_8/viewers_Visiteurs/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+</div>
+
+<div id="idAlerteModale" class="w3-modal">
+  <div class="w3-modal-content w3-red w3-card-4 w3-animate-top">
+    <div class="w3-container">
+      <span onclick="masquerAlerte()" class="w3-button w3-display-topright">&times;</span>
+      <p><b>Erreur</b></p>
+      <p><div id="idMessageAlerte"></div></p>
+    </div>
+  </div>
+</div>
+
+<div id="fenetreModale" onclick="fermerFenetreModale()">
+  <span class="boutonX" onclick="fermerFenetreModale()">&times;</span>
+  <img id="imageAAfficher">
+  <div id="texteAAfficher"></div>
+</div>
+
+<div id="cRetour" class="cInvisible" onclick="defilerVersLeHaut()">
+  <img src="images/chevron-up.svg">
+</div>
+
+<br>
+
+<script src="js/alq.js"></script>
+<script src="js/liste.js"></script>
+
+</body>
+
+</html>

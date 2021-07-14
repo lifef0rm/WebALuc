@@ -1,0 +1,142 @@
+body {
+  background-color: #efefef;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+a:link {
+  color: #006400;
+}
+.messageSuivi {
+  color: #ffffff;
+  padding: 20px 20px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000;
+}
+.cadreFondRouge {
+  background-color: #f44336;
+}
+.cadreFondVert {
+  background-color: #4BB543;
+}
+.hr1 {
+  margin-top: 1.3em;
+  margin-bottom: 1.2em;
+}
+.cadreGlobalAventure {
+  background-color: #ffffff;
+  margin: 1.5em auto;
+  max-width: 600px;
+  border: 1px solid #808080;
+  -moz-box-shadow: 0px 0px 10px 0px #333333;
+  -webkit-box-shadow: 0px 0px 10px 0px #333333;
+  box-shadow: 0px 0px 10px 0px #333333;
+}
+.cadreImageEtTitreAL {
+  position:   relative;
+  overflow:   hidden;
+  width:      100%;
+  height:     350px;
+  max-height: calc(100vw * 350 / 600);
+  background-position: center;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+.cadreCarteAL {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:      100%;
+  height:     455px;
+  max-height: calc(100vw * 500 / 600);
+  background-position: center bottom;
+  border-radius: 6px;
+  -moz-box-shadow: 0px 0px 10px 0px #333333;
+  -webkit-box-shadow: 0px 0px 10px 0px #333333;
+  box-shadow: 0px 0px 10px 0px #333333;
+}
+.titreImageAL {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 8px #000000, 0 0 8px #000000;
+  text-align: center;
+  width: 80%;
+  padding-left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 500px) {
+  .titreImageAL {
+    font-size: 8vw;
+  }
+}
+.cadreDescriptionAventure {
+  padding: 1.5em 27px 1em;
+}
+.titreCentre {
+  font-weight: bold;
+  margin-bottom: 0.1em;
+  text-align: center;
+}
+.sommaireCentre {
+  line-height: 1.4;
+  text-align: center;
+}
+.barreHorizontaleBoutons {
+  margin-top: 0.8em;
+  text-align: center;
+}
+.boutonAction {
+  background-color: white;
+  color: black;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 6px 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.boutonAction > img {
+  width: 18px;
+  height: 18px;
+  vertical-align: text-top;
+}
+.boutonAction:hover {
+  background-color: #fafafa;
+}
+.boutonAction:active {
+  opacity: 0.5
+}
+@media (max-width: 500px) {
+  .masquerSurMobile {
+    display: none;
+  }
+}
+.basDePageCentre {
+  margin-top: 0.8em;
+  text-align: center;
+}
+.insecable {
+  white-space: nowrap;
+}
